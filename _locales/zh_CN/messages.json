@@ -1,0 +1,10 @@
+{
+    "appName": {
+      "message": "Zor Ranking kit",
+      "description": "The title of the application, displayed in the web store."
+    },
+    "appDesc": {
+      "message": "展示多种期刊的多种排名。",
+      "description":"The description of the application, displayed in the web store."
+    }
+  }

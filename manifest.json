@@ -1,0 +1,107 @@
+{
+	"manifest_version": 2,
+	"name": "Zor's Ranking Kit",
+	"version": "0.1.0",
+	"description": "展示多种期刊的排名信息 -- Shutter Zor",
+	"default_locale": "zh_CN",
+	"icons": {
+		"16": "lib/logo/16.png",
+		"48": "lib/logo/48.png",
+		"128": "lib/logo/128.png"
+	},
+	"browser_action": {
+		"default_icon": {
+			"16": "lib/logo/16.png",
+			"32": "lib/logo/32.png",
+			"48": "lib/logo/48.png"
+		},
+		"default_popup":"popup/popup.html"
+	},
+	"permissions": [ "storage" ],
+	"background" : {
+		"page" : "background.html"
+	},
+    "content_scripts": [
+        {
+            "matches": [
+				"https://*/*",
+				"http://*/*"
+            ],
+            "js": [
+                "lib/js/jquery-3.3.1.min.js",
+				
+                "show_ranking/ranking/utils.js",
+                "show_ranking/ranking/ccf.js",
+				"show_ranking/ranking/swufe.js",
+				"show_ranking/ranking/cufe.js",
+				"show_ranking/ranking/sci.js",
+				"show_ranking/ranking/sciZhongBase.js",
+				"show_ranking/ranking/sciZhongUp.js",
+				"show_ranking/ranking/sciif.js",
+				"show_ranking/ranking/fdu.js",
+				"show_ranking/ranking/sjtu.js",
+				"show_ranking/ranking/cssci.js",
+				"show_ranking/ranking/xmu.js",
+				"show_ranking/ranking/ruc.js",
+				"show_ranking/ranking/cscd.js",
+				"show_ranking/ranking/uibe.js",
+				"show_ranking/ranking/swjtu.js",
+				"show_ranking/ranking/pku.js",
+				"show_ranking/ranking/xdu.js",
+				
+                "show_ranking/site/siteUtil.js",
+                "show_ranking/site/acm.js",
+                "show_ranking/site/ei.js",
+                "show_ranking/site/ieee.js",
+                "show_ranking/site/springer.js",
+                "show_ranking/site/scholar.js",
+                "show_ranking/site/zhiwang.js",
+				"show_ranking/site/microsoft.js",
+				"show_ranking/site/webofscience.js",
+				"show_ranking/site/newwebofscience.js",
+				"show_ranking/site/baiduxueshu.js",
+				"show_ranking/site/aminer.js",
+				"show_ranking/site/pubmed.js",
+				"show_ranking/site/bing.js",
+				"show_ranking/site/dblp2.js",
+				"show_ranking/site/dblp.js",
+				"show_ranking/site/readpaper.js",
+				
+                "show_ranking/data/ccf-index.js",
+                "show_ranking/data/ccf-rank.js",
+				"show_ranking/data/swufeRankingName.js",
+				"show_ranking/data/ccfRankingAbbrName.js",
+				"show_ranking/data/ccfRankingFullName.js",
+				"show_ranking/data/cufeRankingName.js",
+				"show_ranking/data/sciImpactFactor.js",
+				"show_ranking/data/sciRankingName.js",
+				"show_ranking/data/sciZhongBaseRankingName.js",
+				"show_ranking/data/sciZhongUpRankingName.js",
+				"show_ranking/data/fduRankingName.js",
+				"show_ranking/data/sjtuRankingName.js",
+				"show_ranking/data/cssciRankingName.js",
+				"show_ranking/data/xmuRankingName.js",
+				"show_ranking/data/rucRankingName.js",
+				"show_ranking/data/cscdRankingName.js",
+				"show_ranking/data/uibeRankingName.js",
+				"show_ranking/data/swjtuRankingName.js",
+				"show_ranking/data/abbName1.js",
+				"show_ranking/data/abbName2.js",
+				"show_ranking/data/abbName3.js",
+				"show_ranking/data/abbName4.js",
+				"show_ranking/data/pkuRankingName.js",
+				"show_ranking/data/xduRankingName.js",
+				
+                "show_ranking/script.js",
+
+				"popup/js/jquery-3.3.1.min.js",
+				"popup/js/jquery-labelauty.js"
+
+            ],
+            "css": [
+                "show_ranking/style.css"
+
+            ]
+        }
+    ]
+}
