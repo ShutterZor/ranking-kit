@@ -3,7 +3,7 @@
 
 本插件正式名称为**Zor's Ranking Kit**，是基于 [museremarkable/swufe_ccf_show_ranking](https://github.com/museremarkable/swufe_ccf_show_ranking) 二次开发的项目，仅保留了个人认为有用的期刊分级信息。
 
-受多方限制影响，**easyScholar**最近开启了付费模型，但~~开源精神永垂不朽~~。
+受多方限制影响，**easyScholar**最近开启了付费模型。
 
 为了不影响**easyScholar**的正常盈利，本插件对功能进行了部分限制，仅适配**知网（CNKI）**与**谷歌学术（Google Scholar）**。
 
@@ -17,7 +17,7 @@
 > 1. 打开Edge浏览器，在网址栏输入“edge:\\extensions”，进入扩展管理页面
 > 2. 打开开发人员模式
 > 3. 将解压后的文件放置你电脑的任意盘符
-> 4. 将文件拖入至浏览器插件页面即可完成安装，随后可以删除原始文件（除了图标会不见，不影响正常工作）
+> 4. 将文件拖入至浏览器插件页面即可完成安装，注意保存好文件
 
 **注意：** 本插件仅在知网（CNKI）与谷歌学术（Google Scholar）工作。
 
